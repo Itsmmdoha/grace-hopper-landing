@@ -1,0 +1,58 @@
+# ============================================
+# Grace Hopper - Event Configuration
+# Edit this file to update the landing page
+# ============================================
+
+# --- Hero Section ---
+hero:
+  title: "Grace Hopper"
+  subtitle: "Analytical Challenge"
+  tagline: "Where Brilliance Meets Logic"
+  description: "An exclusive analytical competition for the women of BRAC University. No coding required — just pure logic, reasoning, and problem-solving prowess."
+
+# --- Event Details ---
+event:
+  name: "Grace Hopper Analytical Challenge"
+  host: "BRAC University Computer Club (BUCC)"
+  date: "2026-04-15"
+  deadline: "2026-04-10T23:59:59"
+  venue: "BRAC University Campus"
+  registration_url: "https://forms.google.com/your-form-link"
+  eligibility: "All female students of BRAC University (any department)"
+  certification: true
+  certification_text: "All participants will receive an official certificate from BUCC."
+  highlights:
+    - "No coding skills required"
+    - "Open to all departments"
+    - "Test your analytical thinking"
+    - "Official certification provided"
+
+# --- Past Event ---
+past_event:
+  name: "Ada Lovelace Mindstrom 1.0"
+  participants: "300+"
+  description: "Our first analytical competition was a massive success, bringing together brilliant minds from across BRAC University."
+  stats:
+    - label: "Participants"
+      value: "300+"
+    - label: "Departments"
+      value: "15+"
+    - label: "Hours of Competition"
+      value: "4"
+    - label: "Winners Awarded"
+      value: "10"
+
+# --- Sponsors ---
+sponsors:
+  title: "Our Sponsors & Partners"
+  contact_email: "marketing.bucc@g.bracu.ac.bd"
+  list:
+    - name: "IFIC Bank PLC"
+      logo_url: "https://ificbank.com.bd/public/wep-content/uploads/webimages/IFIC-Logo.png"
+      url: "https://ificbank.com.bd"
+
+# --- Footer ---
+footer:
+  credit: "BRAC University Computer Club (BUCC)"
+  year: 2026
+  website: "https://bucc.dev"
