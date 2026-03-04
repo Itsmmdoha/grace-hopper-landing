@@ -69,11 +69,14 @@ export function HeroSection({
           {presentedBy}
         </p>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground text-balance leading-[1.05]">
-          {title}{" "}
-          <span className="inline-block px-4 sm:px-5 py-1 rounded-full bg-primary text-primary-foreground text-2xl sm:text-4xl md:text-5xl lg:text-6xl align-middle font-serif italic">
-            {subtitle}
-          </span>
+        <h1>
+          <img
+            src="/grace-hopper-logo.png"
+            alt="Grace Hopper Mindstorm 2.0"
+            width="851"
+            height="368"
+            className="mx-auto w-full max-w-[300px] sm:max-w-[560px] lg:max-w-[800px] h-auto"
+          />
         </h1>
 
         <p className="mt-4 text-lg sm:text-xl md:text-2xl font-serif italic text-muted-foreground">
