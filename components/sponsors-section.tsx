@@ -14,12 +14,12 @@ interface SponsorsProps {
 
 export function SponsorsSection({ title, contactEmail, list }: SponsorsProps) {
   return (
-    <section className="py-20 md:py-32 px-6">
+    <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto text-center">
         <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-secondary border border-border text-sm text-muted-foreground">
           Partners
         </span>
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-8 sm:mb-12">
           {title}
         </h2>
 

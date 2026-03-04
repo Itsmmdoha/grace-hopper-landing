@@ -3,6 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { EventInfo } from "@/components/event-info";
+import { EventTimeline } from "@/components/event-timeline";
+import { PrizePool } from "@/components/prize-pool";
 import { PastEvent } from "@/components/past-event";
 import { SponsorsSection } from "@/components/sponsors-section";
 import { SiteFooter } from "@/components/site-footer";
@@ -19,6 +21,7 @@ export default function Home() {
         title={config.hero.title}
         subtitle={config.hero.subtitle}
         tagline={config.hero.tagline}
+        presentedBy={config.hero.presented_by}
         description={config.hero.description}
         deadline={config.event.deadline}
         registrationUrl={config.event.registration_url}
@@ -38,6 +41,20 @@ export default function Home() {
         highlights={config.event.highlights}
         registration_url={config.event.registration_url}
       />
+
+      <Separator className="max-w-5xl mx-auto" />
+
+      <EventTimeline rounds={config.timeline} />
+
+      <Separator className="max-w-5xl mx-auto" />
+
+      <PrizePool
+        title={config.prize_pool.title}
+        description={config.prize_pool.description}
+        prizes={config.prize_pool.prizes}
+      />
+
+      <Separator className="max-w-5xl mx-auto" />
 
       <PastEvent
         name={config.past_event.name}

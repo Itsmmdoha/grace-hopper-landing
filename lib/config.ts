@@ -2,13 +2,29 @@ import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
 
+export interface TimelineRound {
+  round: string;
+  date: string;
+  mode: string;
+  description: string;
+}
+
+export interface PrizeEntry {
+  position: string;
+  amount: string;
+  currency: string;
+  description: string;
+}
+
 export interface EventConfig {
   hero: {
     title: string;
     subtitle: string;
     tagline: string;
+    presented_by: string;
     description: string;
   };
+  timeline: TimelineRound[];
   event: {
     name: string;
     host: string;
@@ -26,6 +42,11 @@ export interface EventConfig {
     participants: string;
     description: string;
     stats: { label: string; value: string }[];
+  };
+  prize_pool: {
+    title: string;
+    description: string;
+    prizes: PrizeEntry[];
   };
   sponsors: {
     title: string;

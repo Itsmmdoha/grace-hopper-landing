@@ -36,22 +36,22 @@ export function EventInfo({
   });
 
   return (
-    <section id="about" className="py-20 md:py-32 px-6">
+    <section id="about" className="py-16 sm:py-20 md:py-32 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-secondary border border-border text-sm text-muted-foreground">
             Event Details
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground text-balance">
-            About{" "}
-            <span className="font-serif italic text-primary">{name}</span>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground text-balance">
+            About the{" "}
+            <span className="font-serif italic text-primary">Event</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Left: Details */}
-          <div className="flex flex-col gap-5">
-            <div className="flex items-start gap-4 p-5 rounded-2xl bg-card border border-border">
+          <div className="flex flex-col gap-3 sm:gap-5">
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-card border border-border">
               <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                 <Calendar className="w-5 h-5 text-primary" />
               </div>

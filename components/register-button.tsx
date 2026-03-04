@@ -71,7 +71,7 @@ export function RegisterButton({
       rel="noopener noreferrer"
       className={`inline-flex items-center gap-2 px-8 py-3.5 rounded-full ${base} text-base font-medium hover:opacity-90 transition-opacity ${className}`}
     >
-      {"Let's Get Started"}
+      Register Now
       <ArrowRight className="w-4 h-4" />
     </a>
   );

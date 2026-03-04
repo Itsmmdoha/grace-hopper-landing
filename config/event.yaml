@@ -1,23 +1,24 @@
 # ============================================
-# Grace Hopper - Event Configuration
+# IFIC presents The Grace Hopper Mindstorm 2.0
 # Edit this file to update the landing page
 # ============================================
 
 # --- Hero Section ---
 hero:
-  title: "Grace Hopper"
-  subtitle: "Analytical Challenge"
+  title: "The Grace Hopper"
+  subtitle: "Mindstorm 2.0"
   tagline: "Where Brilliance Meets Logic"
-  description: "An exclusive analytical competition for the women of BRAC University. No coding required — just pure logic, reasoning, and problem-solving prowess."
+  presented_by: "IFIC presents"
+  description: "An exclusive analytical competition for the women of BRAC University. No coding required, just pure logic, reasoning, and problem-solving prowess."
 
 # --- Event Details ---
 event:
-  name: "Grace Hopper Analytical Challenge"
+  name: "IFIC presents The Grace Hopper Mindstorm 2.0"
   host: "BRAC University Computer Club (BUCC)"
-  date: "2026-04-15"
-  deadline: "2026-04-10T23:59:59"
+  date: "2026-03-10"
+  deadline: "2026-03-09T23:59:59"
   venue: "BRAC University Campus"
-  registration_url: "https://forms.google.com/your-form-link"
+  registration_url: "https://forms.gle/z2BbgCRbDceHS1AE6"
   eligibility: "All female students of BRAC University (any department)"
   certification: true
   certification_text: "All participants will receive an official certificate from BUCC."
@@ -27,20 +28,47 @@ event:
     - "Test your analytical thinking"
     - "Official certification provided"
 
+# --- Timeline / Rounds ---
+timeline:
+  - round: "Preliminary Round"
+    date: "10 March 2026"
+    mode: "Offline"
+    description: "Featuring analytical-based questions. Participants will need to solve problems on paper, testing their logical reasoning and problem-solving abilities."
+  - round: "Final Round"
+    date: "12 March 2026"
+    mode: "Offline"
+    description: "A slides-based presentation round. Participants will present on a particular topic, showcasing their analytical thinking and communication skills."
+
 # --- Past Event ---
 past_event:
   name: "Ada Lovelace Mindstrom 1.0"
-  participants: "300+"
+  participants: "250+"
   description: "Our first analytical competition was a massive success, bringing together brilliant minds from across BRAC University."
   stats:
     - label: "Participants"
-      value: "300+"
+      value: "250+"
     - label: "Departments"
       value: "15+"
-    - label: "Hours of Competition"
-      value: "4"
     - label: "Winners Awarded"
-      value: "10"
+      value: "5"
+
+# --- Prize Pool ---
+prize_pool:
+  title: "Prize Pool"
+  description: "Top performers will be rewarded for their brilliance."
+  prizes:
+    - position: "1st Place"
+      amount: "15,000"
+      currency: "BDT"
+      description: "Champion of analytical thinking and problem-solving excellence."
+    - position: "2nd Place"
+      amount: "10,000"
+      currency: "BDT"
+      description: "Outstanding performance in logic and reasoning."
+    - position: "3rd Place"
+      amount: "5,000"
+      currency: "BDT"
+      description: "Exceptional analytical abilities and sharp critical thinking."
 
 # --- Sponsors ---
 sponsors:
@@ -55,4 +83,4 @@ sponsors:
 footer:
   credit: "BRAC University Computer Club (BUCC)"
   year: 2026
-  website: "https://bucc.dev"
+  website: "https://www.bracucc.org/"
