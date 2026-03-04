@@ -1,12 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Navbar({ host, registrationUrl }: { host: string; registrationUrl: string }) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="flex items-center gap-2">
-        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-          <span className="text-primary-foreground font-bold text-xs sm:text-sm">GH</span>
-        </div>
+        <Image
+          src="/web-logo.png"
+          alt="Grace Hopper Logo"
+          width={56}
+          height={56}
+          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex-shrink-0 object-cover"
+        />
         <span className="font-serif text-sm sm:text-lg font-bold text-foreground truncate">
           Grace Hopper Mindstorm 2.0
         </span>

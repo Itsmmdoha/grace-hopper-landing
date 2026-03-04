@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     'women in tech',
     'computer club',
   ],
+  icons: {
+    icon: '/web-logo.png',
+  },
 }
 
 export const viewport: Viewport = {

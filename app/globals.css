@@ -4,6 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* background-image: url('/bg-image.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
   --background: oklch(0.97 0.005 20);
   --foreground: oklch(0.18 0.02 20);
   --card: oklch(1 0 0);
@@ -120,6 +125,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
