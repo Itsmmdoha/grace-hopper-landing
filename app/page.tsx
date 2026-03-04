@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <Navbar host={config.event.host} />
+      <Navbar host={config.event.host} registrationUrl={config.event.registration_url} />
 
       <HeroSection
         description={config.hero.description}

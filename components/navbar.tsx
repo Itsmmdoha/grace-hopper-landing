@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Navbar({ host }: { host: string }) {
+export function Navbar({ host, registrationUrl }: { host: string; registrationUrl: string }) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="flex items-center gap-2">
@@ -38,7 +38,9 @@ export function Navbar({ host }: { host: string }) {
           {host}
         </span>
         <Link
-          href="#register"
+          href={registrationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm rounded-full bg-foreground text-background hover:opacity-90 transition-opacity"
         >
           Register
