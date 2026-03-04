@@ -8,7 +8,7 @@ export function Navbar({ host, registrationUrl }: { host: string; registrationUr
           <span className="text-primary-foreground font-bold text-xs sm:text-sm">GH</span>
         </div>
         <span className="font-serif text-sm sm:text-lg font-bold text-foreground truncate">
-          Grace Hopper Mindstorm
+          Grace Hopper Mindstorm 2.0
         </span>
       </div>
 

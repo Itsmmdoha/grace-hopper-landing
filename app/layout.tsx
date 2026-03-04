@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'IFIC presents The Grace Hopper Mindstorm 2.0 | BUCC',
+  title: 'Grace Hopper Mindstorm 2.0 | BUCC',
   description:
     'An exclusive analytical competition for the women of BRAC University. No coding required — test your logic, reasoning, and problem-solving skills. Hosted by BRAC University Computer Club.',
   keywords: [
