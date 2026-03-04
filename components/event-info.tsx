@@ -4,12 +4,14 @@ import {
   Users,
   Award,
   Sparkles,
+  Clock, // Keep the Clock icon
 } from "lucide-react";
 import { RegisterButton } from "./register-button";
 
 interface EventInfoProps {
   name: string;
   date: string;
+  // Removed time from props since it's hardcoded now
   deadline: string;
   venue: string;
   eligibility: string;
@@ -55,9 +57,16 @@ export function EventInfo({
               <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                 <Calendar className="w-5 h-5 text-primary" />
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Date</h3>
-                <p className="text-muted-foreground text-sm">{formattedDate}</p>
+              <div className="flex-1">
+                <h3 className="font-semibold text-foreground">Date & Time</h3>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mt-1">
+                  <p className="text-muted-foreground text-sm">{formattedDate}</p>
+                  <span className="hidden sm:inline text-border">•</span>
+                  <div className="flex items-center gap-1 text-muted-foreground text-sm">
+                    <Clock className="w-3.5 h-3.5" />
+                    <span>3:30 p.m.</span> {/* Hardcoded time here */}
+                  </div>
+                </div>
               </div>
             </div>
 
