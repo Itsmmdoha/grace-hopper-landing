@@ -31,7 +31,7 @@ event:
 # --- Timeline / Rounds ---
 timeline:
   - round: "Preliminary Round"
-    date: "10 March 2026"
+    date: "10 March 2026, 03:30 p.m."
     mode: "Offline"
     description: "This 40-minute analytical round features analytical-based questions. Participants will need to solve problems on paper, testing their logical reasoning and problem-solving abilities."
   - round: "Final Round"

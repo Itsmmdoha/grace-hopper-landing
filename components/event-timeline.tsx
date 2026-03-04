@@ -58,7 +58,7 @@ export function EventTimeline({ rounds }: TimelineProps) {
                       </h3>
                       <div className="flex items-center gap-2 flex-shrink-0">
                         <span className="text-xs sm:text-sm text-muted-foreground font-medium">
-                          {round.date}, 3:30 p.m.
+                          {round.date}
                         </span>
                         <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
                           {round.mode}
