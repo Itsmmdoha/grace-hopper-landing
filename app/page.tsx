@@ -18,10 +18,6 @@ export default function Home() {
       <Navbar host={config.event.host} />
 
       <HeroSection
-        title={config.hero.title}
-        subtitle={config.hero.subtitle}
-        tagline={config.hero.tagline}
-        presentedBy={config.hero.presented_by}
         description={config.hero.description}
         deadline={config.event.deadline}
         registrationUrl={config.event.registration_url}

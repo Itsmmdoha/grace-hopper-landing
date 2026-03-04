@@ -1,21 +1,14 @@
+import Image from "next/image";
 import { DecorativeStar } from "./decorative-star";
 import { RegisterButton } from "./register-button";
 
 interface HeroProps {
-  title: string;
-  subtitle: string;
-  tagline: string;
-  presentedBy: string;
   description: string;
   deadline: string;
   registrationUrl: string;
 }
 
 export function HeroSection({
-  title,
-  subtitle,
-  tagline,
-  presentedBy,
   description,
   deadline,
   registrationUrl,
@@ -64,21 +57,17 @@ export function HeroSection({
           By BRAC University Computer Club
         </div>
 
-        {/* Presented by */}
-        <p className="text-sm sm:text-base uppercase tracking-widest text-muted-foreground mb-3">
-          {presentedBy}
-        </p>
-
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground text-balance leading-[1.05]">
-          {title}{" "}
-          <span className="inline-block px-4 sm:px-5 py-1 rounded-full bg-primary text-primary-foreground text-2xl sm:text-4xl md:text-5xl lg:text-6xl align-middle font-serif italic">
-            {subtitle}
-          </span>
-        </h1>
-
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl font-serif italic text-muted-foreground">
-          {tagline}
-        </p>
+        {/* Hero Banner Image */}
+        <div className="w-full max-w-[851px] mx-auto mb-2">
+          <Image
+            src="/images/hero_banner_851x368.png"
+            alt="Grace Hopper Mindstorm 2.0 - She Thinks, She Creates, She Leads"
+            width={851}
+            height={368}
+            priority
+            className="w-full h-auto object-contain"
+          />
+        </div>
 
         <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-pretty">
           {description}
