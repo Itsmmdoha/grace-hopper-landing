@@ -57,18 +57,10 @@ prize_pool:
   title: "Prize Pool"
   description: "Top performers will be rewarded for their brilliance."
   prizes:
-    - position: "1st Place"
-      amount: "15,000"
+    - position: "Prize Pool"
+      amount: "20,000"
       currency: "BDT"
-      description: "Champion of analytical thinking and problem-solving excellence."
-    - position: "2nd Place"
-      amount: "10,000"
-      currency: "BDT"
-      description: "Outstanding performance in logic and reasoning."
-    - position: "3rd Place"
-      amount: "5,000"
-      currency: "BDT"
-      description: "Exceptional analytical abilities and sharp critical thinking."
+      description: "There's a pretty big prize pool"
 
 # --- Sponsors ---
 sponsors:
