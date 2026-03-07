@@ -86,7 +86,7 @@ export function HeroSection({
           {/* Download Rulebook Button */}
           {/* Download Rulebook Button */}
           <a
-            href="/rulebook.pdf"
+            href="https://drive.google.com/file/d/1CJPlg4BDs3P_9WRGmzM9gcyay7qo9xTG/view"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-pink-500/50 bg-pink-500/5 hover:bg-pink-500/15 hover:border-pink-500 text-pink-600 dark:text-pink-400 font-medium transition-all duration-300 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
