@@ -68,7 +68,7 @@ export function RegisterButton({
 
   return (
     <a
-      href="#"
+      href={registrationUrl}
       target="_blank"
       rel="noopener noreferrer"
       // The wrapper handles the outer pill shape, the 2px border thickness (p-[2px]), and the ambient pink shadow glow
@@ -86,8 +86,8 @@ export function RegisterButton({
       <span
         className={`relative flex items-center justify-center gap-2 px-10 py-4 rounded-full w-full h-full text-lg font-semibold ${base}`}
       >
-        Register Closed
-        {/* <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /> */}
+        Register Now
+        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </span>
     </a>
   );
