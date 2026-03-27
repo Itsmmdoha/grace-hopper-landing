@@ -23,7 +23,7 @@ export default function Home() {
         registrationUrl={config.event.registration_url}
       />
 
-      <CountdownTimer deadline={config.event.deadline} />
+      {/* <CountdownTimer deadline={config.event.deadline} /> */}
 
       <Separator className="max-w-5xl mx-auto" />
 
