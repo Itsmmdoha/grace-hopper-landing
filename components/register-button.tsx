@@ -51,7 +51,9 @@ export function RegisterButton({
         </button>
         {showMessage && (
           <div className="mt-4 p-4 rounded-xl bg-card border border-border text-sm text-muted-foreground max-w-md absolute top-full left-0 z-50">
-            {"We're sorry, but the registration deadline for the programming contest has passed. Registration is no longer available."}
+            {
+              "We're sorry, but the registration deadline for the programming contest has passed. Registration is no longer available."
+            }
             <button
               onClick={() => setShowMessage(false)}
               className="ml-2 text-primary hover:underline text-xs"
@@ -66,7 +68,7 @@ export function RegisterButton({
 
   return (
     <a
-      href={registrationUrl}
+      href="#"
       target="_blank"
       rel="noopener noreferrer"
       // The wrapper handles the outer pill shape, the 2px border thickness (p-[2px]), and the ambient pink shadow glow
@@ -81,9 +83,11 @@ export function RegisterButton({
 
       {/* Inner Solid Button */}
       {/* This sits on top of the spinner, leaving exactly 2px of the spinning gradient visible at the edges */}
-      <span className={`relative flex items-center justify-center gap-2 px-10 py-4 rounded-full w-full h-full text-lg font-semibold ${base}`}>
-        Register Now
-        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      <span
+        className={`relative flex items-center justify-center gap-2 px-10 py-4 rounded-full w-full h-full text-lg font-semibold ${base}`}
+      >
+        Register Closed
+        {/* <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /> */}
       </span>
     </a>
   );
