@@ -7,7 +7,7 @@ interface HeroProps {
   deadline: string;
   registrationUrl: string;
   // Optional: You can add rulebookUrl here if you want to pass it dynamically
-  // rulebookUrl: string; 
+  // rulebookUrl: string;
 }
 
 export function HeroSection({
@@ -86,7 +86,7 @@ export function HeroSection({
           {/* Download Rulebook Button */}
           {/* Download Rulebook Button */}
           <a
-            href="https://drive.google.com/file/d/1CJPlg4BDs3P_9WRGmzM9gcyay7qo9xTG/view"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-pink-500/50 bg-pink-500/5 hover:bg-pink-500/15 hover:border-pink-500 text-pink-600 dark:text-pink-400 font-medium transition-all duration-300 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
@@ -98,15 +98,23 @@ export function HeroSection({
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
             </svg>
-            Download The Rulebook
+            Download The Rulebook (Will Be Updated Soon)
           </a>
         </div>
       </div>
 
       {/* Decorative sphere */}
-      <div className="absolute bottom-0 right-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] translate-x-[20%] translate-y-[20%] pointer-events-none" aria-hidden="true">
+      <div
+        className="absolute bottom-0 right-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] translate-x-[20%] translate-y-[20%] pointer-events-none"
+        aria-hidden="true"
+      >
         <div
           className="w-full h-full rounded-full border border-foreground/10 relative overflow-hidden"
           style={{

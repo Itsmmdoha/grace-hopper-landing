@@ -60,11 +60,13 @@ export function EventInfo({
               <div className="flex-1">
                 <h3 className="font-semibold text-foreground">Date & Time</h3>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mt-1">
-                  <p className="text-muted-foreground text-sm">{formattedDate}</p>
+                  <p className="text-muted-foreground text-sm">
+                    Thursday, April 16, 2026
+                  </p>
                   <span className="hidden sm:inline text-border">•</span>
                   <div className="flex items-center gap-1 text-muted-foreground text-sm">
                     <Clock className="w-3.5 h-3.5" />
-                    <span>3:30 p.m.</span> {/* Hardcoded time here */}
+                    <span>05:00 p.m.</span> {/* Hardcoded time here */}
                   </div>
                 </div>
               </div>
@@ -120,7 +122,10 @@ export function EventInfo({
                 ))}
               </ul>
 
-              <div id="register" className="mt-8 pt-6 border-t border-border flex justify-center">
+              <div
+                id="register"
+                className="mt-8 pt-6 border-t border-border flex justify-center"
+              >
                 <RegisterButton
                   deadline={deadline}
                   registrationUrl={registration_url}
